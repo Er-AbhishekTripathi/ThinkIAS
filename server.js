@@ -82,6 +82,9 @@ app.use('/api/plans', require('./routes/plans'));
 app.use('/api/syllabus', require('./routes/syllabus'));
 app.use('/api/tags', require('./routes/tags'));
 
+app.use('/api/testimonials', require('./routes/testimonial'));
+app.use('/api/support-features', require('./routes/supportFeature'));
+
 // Add this to your server.js routes
 app.use('/api/questions', require('./routes/questions'));
 
@@ -309,4 +312,3 @@ app.listen(PORT, '0.0.0.0', () => {
   
   // Initialize admin user
   initializeAdmin();
-});
